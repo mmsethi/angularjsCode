@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="formsApp">
+    <head>
+        <base href="/FORMS_1">
+        <title>
+            {{title}}
+        </title>
+        <link rel="icon" type="image/png" href="image/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/app.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+        <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
+    <body >
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Angular Routing Example</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="/about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="/contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="/login"><i class="fa fa-home"></i> Login</a></li>
+                    <li><a href="/signup"><i class="fa fa-shield"></i> Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div   class="container" style="margin: 10px;"  >
+            <!-- view Template -->
+            <div ng-view></div>
+           
+        </div>
+        <script src="angular/angular.min.js"></script>
+        <script src="angular/angular-route.min.js"></script>
+        <script src="jquery/jquery.min-1.9.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
